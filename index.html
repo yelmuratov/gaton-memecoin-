@@ -20,6 +20,12 @@
             display: inline-block;
         }
 
+        @media only screen and (max-width: 768px) {
+    .block {
+        display: none;
+    }
+}
+
         .gatonomics::before {
             content: attr(data-text);
             position: absolute;
@@ -32,6 +38,67 @@
             -webkit-text-fill-color: transparent;
             z-index: -1;
         }
+
+        .airdrop__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.airdrop__steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.airdrop__step {
+    background-color: #282828; /* Adjust according to your existing section colors */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: left;
+    flex: 1 1 300px; /* Ensure the cards take up equal space */
+    max-width: 350px; /* Slightly bigger on desktop */
+    min-height: 180px; /* Ensure all cards are the same height */
+}
+
+.airdrop__step-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.airdrop__step-description {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.airdrop__arrow img {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    .airdrop__steps {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .airdrop__arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .airdrop__step {
+        flex: 1 1 400px; /* Make cards slightly bigger on desktop */
+        max-width: 400px;
+    }
+}
+
+
+
 
         .gatonomics::after {
             content: attr(data-text);
@@ -190,8 +257,8 @@
                             <div class="hero-article__actions" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                                 <a href="https://dedust.io/" target="_blank" class="hero-article__button button button_red">buy $gaton</a>
                                 <div class="hero-article__social">
-                                    <a href="#" target="_blank" class="hero-article__social-icon"><img src="./img/icons/tg-icon.svg" alt=""></a>
-                                    <a href="#" target="_blank" class="hero-article__social-icon"><img src="./img/icons/twitter-icon.svg" alt=""></a>
+                                    <a href="https://t.me/gatonvip" target="_blank" class="hero-article__social-icon"><img src="./img/icons/tg-icon.svg" alt=""></a>
+                                    <a href="https://x.com/gatonvip" target="_blank" class="hero-article__social-icon"><img src="./img/icons/twitter-icon.svg" alt=""></a>
                                 </div>
                             </div>
                             <div class="hero__article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
@@ -224,62 +291,6 @@
                     </div>
                 </div>
             </section>
-
-            <section class="main__meet meet">
-                <div class="meet__container">
-                    <div class="meet__wrapper">
-                        <div class="meet-article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
-                            <h2 class="meet__title title">
-                                Meet our partners
-                                <div class="meet-article__decor"><img src="./img/main__meet/purple-decor.svg" alt=""></div>
-                            </h2>
-                            <p class="meet__paragraph paragraph">
-                                To be announced once presale and listings are completed
-                            </p>
-
-                            <div class="meet-article__decor-coin meet-article__decor-coin_top-left">
-                                <img src="./img/logo.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="50">
-                            </div>
-                            <div class="meet-article__decor-coin meet-article__decor-coin_top-right">
-                                <img src="./img/logo.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
-                            </div>
-                            <div class="meet-article__decor-coin meet-article__decor-coin_bottom-right">
-                                <img src="./img/logo.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-                            </div>
-                        </div>
-                        <div class="meet-preview" data-aos="fade-left" data-aos-duration="800" data-aos-delay="50">
-                            <div class="meet-preview__img">
-                                <div class="meet-preview__img-sp1">
-                                    <img src="./img/main__meet/preview/sp1.png" alt="">
-                                </div>
-                                <div class="meet-preview__img-sp2">
-                                    <img src="./img/main__meet/preview/sp2.png" alt="">
-                                </div>
-                                <a href="#" target="_blank" class="meet-preview__img-cmc meet-preview__link">
-                                    <img src="./img/main__meet/preview/cmc.png" alt="">
-                                </a>
-
-                                <a href="#" target="_blank" class="meet-preview__img-cg meet-preview__link">
-                                    <img src="./img/main__meet/preview/cg.png" alt="">
-                                </a>
-                                <a href="#" target="_blank" class="meet-preview__img-tw meet-preview__link">
-                                    <img src="./img/main__meet/preview/tw.png" alt="">
-                                </a>
-                                <a href="#" target="_blank" class="meet-preview__img-mm meet-preview__link">
-                                    <img src="./img/main__meet/preview/mm.png" alt="">
-                                </a>
-                                <a href="#" target="_blank" class="meet-preview__img-bsc meet-preview__link">
-                                    <img src="./img/main__meet/preview/bsc.png" alt="">
-                                </a>
-                            </div>
-                            <div class="meet-preview__shadow">
-                                <img src="./img/main__meet/preview-shadow.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="main__tocenomics tocenomics" id="tocenomics">
                 <div class="tocenomics__decor-red"><img src="./img/main__tocenomics/decor-red.png" alt=""></div>
                 <div class="tocenomics__decor-blue"><img src="./img/main__tocenomics/decor-blue.png" alt=""></div>
@@ -320,33 +331,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tocenomics-body__legends">
-                                <div class="tocenomics-body__legend burned-legend">
-                                    <div class="tocenomics-body__pic-legend"></div>
-                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="burned">51</span>% - Burned (On 06/15/2023)</span>
-                                </div>
-                                <div class="tocenomics-body__legend presale-legend">
-                                    <div class="tocenomics-body__pic-legend"></div>
-                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="presale">27</span>% - Presale</span>
-                                </div>
-                                <div class="tocenomics-body__legend liquidity-legend">
-                                    <div class="tocenomics-body__pic-legend"></div>
-                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="liquidity">13.77</span>% - Liquidity (1 year lock)</span>
-                                </div>
-                                <div class="tocenomics-body__legend marketing-legend">
-                                    <div class="tocenomics-body__pic-legend"></div>
-                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="marketing">6.23</span>% - Marketing</span>
-                                </div>
-                                <div class="tocenomics-body__legend airdrop-legend">
-                                    <div class="tocenomics-body__pic-legend"></div>
-                                    <span class="tocenomics-body__value-legend"><span class="value-tocenomics" id="airdrop">2</span>% - Airdrop</span>
-                                </div>
-                            </div>
                         </div>
                         <div class="tocenomics-token" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                             <div class="tocenomics-token__field">
                                 <div class="tocenomics-token__label">CONTRACT ADDRESS</div>
-                                <input type="text" value="0xE79269544517188A38938A599ccdaF8F90818812" id="token-id" readonly data-action="copy-token">
+                                <input type="text" value="When on the DeDust" id="token-id" readonly data-action="copy-token">
                                 <button class="tocenomics-token__icon" data-action="copy-token">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.68 0H6.6C6.24991 0 5.91417 0.139071 5.66662 0.386619C5.41907 0.634167 5.28 0.969914 5.28 1.32V5.28H1.32C0.969914 5.28 0.634167 5.41907 0.386619 5.66662C0.139071 5.91417 0 6.24991 0 6.6V20.68C0 21.0301 0.139071 21.3658 0.386619 21.6134C0.634167 21.8609 0.969914 22 1.32 22H15.4C15.7501 22 16.0858 21.8609 16.3334 21.6134C16.5809 21.3658 16.72 21.0301 16.72 20.68V16.72H20.68C21.0301 16.72 21.3658 16.5809 21.6134 16.3334C21.8609 16.0858 22 15.7501 22 15.4V1.32C22 0.969914 21.8609 0.634167 21.6134 0.386619C21.3658 0.139071 21.0301 0 20.68 0ZM14.08 19.36H2.64V7.92H14.08V19.36ZM19.36 14.08H16.72V6.6C16.72 6.24991 16.5809 5.91417 16.3334 5.66662C16.0858 5.41907 15.7501 5.28 15.4 5.28H7.92V2.64H19.36V14.08Z" fill="white"/>
@@ -381,7 +370,7 @@
                                     </div>
                                     <div class="roadmap-card__body roadmap-steps">
                                         <div class="roadmap-steps__step">He felt that he was not on the correct path</div>
-                                        <div class="roadmap-steps__step">so he dropped  out of college. He chose the struggle </div>
+                                        <div class="roadmap-steps__step">so he dropped out of college. He chose the struggle </div>
                                         <div class="roadmap-steps__step">because he knows it will be worth it.</div>
                                     </div>
                                     <div class="roadmap-card__done">
@@ -433,7 +422,7 @@
                                             <img src="./img/icons/waiting-icon.svg" alt="" class="marker-wait">
                                         </div>
                                     </div>
-                                    <div class="roadmap-card__body roadmap-steps">
+                                    <div class="roadmap-card__body roadmap-steps" style="margin-bottom: 20px;">
                                         <div class="roadmap-steps__step">MF THE BIG 3 N*** ITS JUST BIG ME</div>
                                         <div class="roadmap-steps__step">MF THE BIG 3 N*** ITS JUST BIG ME</div>
                                         <div class="roadmap-steps__step">MF THE BIG 3 N*** ITS JUST BIG ME</div>
@@ -441,57 +430,40 @@
                                     <div class="roadmap-card__done">
                                         <img src="./img/STRONG-01.png" alt="">
                                     </div>
+                                    <span style="height: 160px;" class="block">
+
+                                    </span>
                                 </div>
                             </div>
-
+            
                             <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
             </section>
+            
 
             <div class="main__airdrop airdrop" id="airdrop-section">
                 <div class="airdrop__container">
-                    <div class="airdrop__wrapper">
-                        <div class="airdrop-bg"><img src="./img/bg/airdrop-bg.png" alt=""></div>
-
-
-                        <div class="airdrop-article__coin1">
-                            <img src="./img/logo.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
+                    <h2 class="airdrop__title title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">HOW TO BUY</h2>
+                    <div class="airdrop__steps">
+                        <div class="airdrop__step" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+                            <h3 class="airdrop__step-title">DOWNLOAD TONKEEPER</h3>
+                            <p class="airdrop__step-description">Download and install Tonkeeper either from the app store on your phone or as a browser extension for desktop.</p>
                         </div>
-                        <div class="airdrop__title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
-                            <h1 class="gatonomics">
-                                Do you want to <br>
-                                get <span class="highlight">GATON</span> <br>
-                                tokens for free?
-                            </h1>
-                            <div class="airdrop-article__coin2">
-                                <img src="./img/logo.png" alt="" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
-                            </div>
+                        
+                        <div class="airdrop__step" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                            <h3 class="airdrop__step-title">BUY SOME TON</h3>
+                            <p class="airdrop__step-description">Purchase $TON from an exchange or bridge $TON and send it to your Tonkeeper Wallet.</p>
                         </div>
-                        <div class="airdrop-article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                            <p class="airdrop-article__paragraph">
-                                Join our GATON competition, complete simple tasks in social networks, and earn points. More points, more chances to get an airdrop.
-                            </p>
-                            <div class="airdrop-article__motto">
-                                Only 100 users will get an Airdrop
-                            </div>
-                            <div class="airdrop-article__money">
-                                <img src="./img/logo.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="airdrop-preview" data-aos="fade-left" data-aos-duration="800" data-aos-delay="0">
-                            <div class="airdrop-preview__top">
-                                <img src="./img/logo.png" alt="">
-                            </div>
-                            <div class="airdrop-preview__bottom-panel">
-                                <a href="#" target="_blank" class="airdrop-preview__button button button_purple">Get an Airdrop</a>
-                            </div>
+                        <div class="airdrop__step" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+                            <h3 class="airdrop__step-title">BUY $GTN</h3>
+                            <p class="airdrop__step-description">Go to DeDust, and paste the $GTN contract address listed on this website to swap your TON for MAD.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
 
             <div class="main__conclusion conclusion">
                 <div class="conclusion__container-big">
@@ -518,24 +490,24 @@
                 </span>
 
                 <div class="footer-nav">
-                    <ul class="footer-nav__menu">
-                        <li class="footer-nav__menu-el">
-                            <a href="#" target="_blank" class="footer-nav__menu-link">presale</a>
-                        </li>
-                        <li class="footer-nav__menu-el">
-                            <a href="#" target="_blank" class="footer-nav__menu-link">Airdrop</a>
-                        </li>
-                        <li class="footer-nav__menu-el">
-                            <a href="#" target="_blank" class="footer-nav__menu-link">contract</a>
-                        </li>
-                        <li class="footer-nav__menu-el">
-                            <a href="#" target="_blank" class="footer-nav__menu-link">Security audit</a>
-                        </li>
-                    </ul>
                     <div class="footer-nav__contact">
-                        <a href="#" target="_blank" class="footer-nav__contact-icon" aria-label="link to telegram"><img src="./img/icons/tg-icon.svg" alt=""></a>
-                        <a href="#" target="_blank" class="footer-nav__contact-icon" aria-label="link to twitter"><img src="./img/icons/twitter-icon.svg" alt=""></a>
+                        <a href="https://t.me/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to telegram">
+                            <img src="./img/icons/tg-icon.svg" alt="">
+                        </a>
+                        <a href=" https://x.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to twitter">
+                            <img src="./img/icons/twitter-icon.svg" alt="">
+                        </a>
+                        <a href="https://instagram.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to instagram">
+                            <img src="./img/icons/instagram.svg" alt="">
+                        </a>
+                        <a href="tiktok.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to tiktok">
+                            <img src="./img/icons/tiktok.svg" alt="">
+                        </a>
+                        <a href="https://youtube.com/@gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to youtube">
+                            <img src="./img/icons/youtube.svg" alt="">
+                        </a>
                     </div>
+                    
                 </div>
             </div>
         </footer>
