@@ -216,6 +216,46 @@
             margin: 10px 0; /* Add space between elements */
         }
     }
+
+    .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 4px 10px;
+    transition: background-color 0.3s;
+}
+
+.btn.swap {
+    background-color: orange;
+}
+
+.btn.icon-only {
+    justify-content: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn:hover {
+    background-color: #555; /* Change this to your desired hover color */
+}
+
     </style>
 </head>
 <body>
@@ -228,13 +268,73 @@
                 </a>
                 <div class="header__burger-menu burger-menu">
                     <ul class="burger-menu__list header-list">
-                        <li class="header-list__el" ><a href="#tocenomics" class="header-list__link">Gotonomics</a></li>
+                        <li class="header-list__el" ><a href="#tocenomics" class="header-list__link">Gatonomics</a></li>
                         <li class="header-list__el"><a href="#airdrop-section" class="header-list__link">How to buy</a></li>
                         <li class="header-list__el"><a href="#roadmap" class="header-list__link">GatonMap</a></li>
                     </ul>
-                    <a href="https://dedust.io/" target="_blank" class="burger-menu__button button button_purple">Buy GATON</a>
+                    <div class="btns">
+                        <a href="https://www.dextools.io/app/" class="btn swap">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 220 256" class="icon">
+                                <g stroke-linejoin="bevel" stroke-width="2">
+                                    <path fill="#CC7400" stroke="#CC7400" d="m110 128 27.25-15.75v31.5L110 159.5z"></path>
+                                    <path fill="#DE7F00" stroke="#DE7F00" d="m110 222.5 27.25-15.75v31.5L110 254z"></path>
+                                    <path fill="#D17200" stroke="#D17200" d="m110 191 27.25-15.75v31.5L110 222.5z"></path>
+                                    <path fill="#E38900" stroke="#E38900" d="m110 159.5 27.25-15.75v31.5L110 191z"></path>
+                                    <path fill="#C97900" stroke="#C97900" d="M191.75 80.75 219 65v31.5l-27.25 15.75z"></path>
+                                    <path fill="#C96E00" stroke="#C96E00" d="M191.75 175.25 219 159.5V191l-27.25 15.75z"></path>
+                                    <path fill="#CC7400" stroke="#CC7400" d="M191.75 143.75 219 128v31.5l-27.25 15.75z"></path>
+                                    <path fill="#E68A00" stroke="#E68A00" d="M191.75 112.25 219 96.5V128l-27.25 15.75zM164.5 96.5l27.25-15.75v31.5L164.5 128z"></path>
+                                    <path fill="#D68100" stroke="#D68100" d="m164.5 191 27.25-15.75v31.5L164.5 222.5z"></path>
+                                    <path fill="#C96E00" stroke="#C96E00" d="m164.5 159.5 27.25-15.75v31.5L164.5 191z"></path>
+                                    <path fill="#DB7D00" stroke="#DB7D00" d="m164.5 128 27.25-15.75v31.5L164.5 159.5z"></path>
+                                    <path fill="#D18100" stroke="#D18100" d="M137.25 112.25 164.5 96.5V128l-27.25 15.75z"></path>
+                                    <path fill="#C47000" stroke="#C47000" d="M137.25 206.75 164.5 191v31.5l-27.25 15.75z"></path>
+                                    <path fill="#D17E00" stroke="#D17E00" d="m137.25 175.25 27.25-15.75V191l-27.25 15.75z"></path>
+                                    <path fill="#CC7400" stroke="#CC7400" d="M137.25 143.75 164.5 128v31.5l-27.25 15.75z"></path>
+                                    <path fill="#FC9800" stroke="#FC9800" d="m1.003 65 27.25 15.75v31.5L1.003 96.5zM1.003 159.5l27.25 15.75v31.5L1.003 191z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m1.003 128 27.25 15.75v31.5L1.003 159.5z"></path>
+                                    <path fill="#FFBD1E" stroke="#FFBD1E" d="m1.003 96.5 27.25 15.75v31.5L1.003 128z"></path>
+                                    <path fill="#FC9800" stroke="#FC9800" d="m82.753 112.25 27.25 15.75v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m82.753 206.75 27.25 15.75V254l-27.25-15.75z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m82.753 175.25 27.25 15.75v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m82.753 143.75 27.25 15.75V191l-27.25-15.75zM55.503 96.5l27.25 15.75v31.5L55.503 128z"></path>
+                                    <path fill="#FC9800" stroke="#FC9800" d="m55.503 191 27.25 15.75v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FFBD1E" stroke="#FFBD1E" d="m55.503 159.5 27.25 15.75v31.5L55.503 191z"></path>
+                                    <path fill="#FFB304" stroke="#FFB304" d="m55.503 128 27.25 15.75v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m28.253 80.75 27.25 15.75V128l-27.25-15.75z"></path>
+                                    <path fill="#FFB304" stroke="#FFB304" d="M28.253 175.25 55.503 191v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FA0" stroke="#FA0" d="m28.253 143.75 27.25 15.75V191l-27.25-15.75z"></path>
+                                    <path fill="#FC9800" stroke="#FC9800" d="M28.253 112.25 55.503 128v31.5l-27.25-15.75z"></path>
+                                    <path fill="#FFE929" stroke="#FFE929" d="m110 2 27.25 15.75L110 33.5 82.75 17.75zM28.25 49.25 55.5 65 28.25 80.75 1 65z"></path>
+                                    <path fill="#FFE65E" stroke="#FFE65E" d="m55.5 33.5 27.25 15.75L55.5 65 28.25 49.25z"></path>
+                                    <path fill="#FFDB2E" stroke="#FFDB2E" d="M82.75 17.75 110 33.5 82.75 49.25 55.5 33.5zM191.75 49.25 219 65l-27.25 15.75L164.5 65z"></path>
+                                    <path fill="#FFE65E" stroke="#FFE65E" d="m110 96.5 27.25 15.75L110 128l-27.25-15.75z"></path>
+                                    <path fill="#FFDB2E" stroke="#FFDB2E" d="M137.25 80.75 164.5 96.5l-27.25 15.75L110 96.5z"></path>
+                                    <path fill="#FFE65E" stroke="#FFE65E" d="m164.5 65 27.25 15.75L164.5 96.5l-27.25-15.75z"></path>
+                                    <path fill="#FFE36A" stroke="#FFE36A" d="m164.5 33.5 27.25 15.75L164.5 65l-27.25-15.75z"></path>
+                                    <path fill="#FFDB2E" stroke="#FFDB2E" d="M82.75 80.75 110 96.5l-27.25 15.75L55.5 96.5z"></path>
+                                    <path fill="#FFE36A" stroke="#FFE36A" d="m110 65 27.25 15.75L110 96.5 82.75 80.75z"></path>
+                                    <path fill="#FFDB2E" stroke="#FFDB2E" d="M137.25 49.25 164.5 65l-27.25 15.75L110 65z"></path>
+                                    <path fill="#FFE65E" stroke="#FFE65E" d="M137.25 17.75 164.5 33.5l-27.25 15.75L110 33.5z"></path>
+                                    <path fill="#FFE929" stroke="#FFE929" d="m55.5 65 27.25 15.75L55.5 96.5 28.25 80.75z"></path>
+                                    <path fill="#FFE65E" stroke="#FFE65E" d="M82.75 49.25 110 65 82.75 80.75 55.5 65z"></path>
+                                    <path fill="#FFE929" stroke="#FFE929" d="m110 33.5 27.25 15.75L110 65 82.75 49.25z"></path>
+                                </g>
+                            </svg>
+                            Swap
+                        </a>
+                        <a href="https://dexscreener.com/" target="_blank" class="btn icon-only">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#fff" fill-rule="evenodd" viewBox="0 0 252 300" class="icon">
+                                <path d="M151.818 106.866c9.177-4.576 20.854-11.312 32.545-20.541 2.465 5.119 2.735 9.586 1.465 13.193-.9 2.542-2.596 4.753-4.826 6.512-2.415 1.901-5.431 3.285-8.765 4.033-6.326 1.425-13.712.593-20.419-3.197m1.591 46.886l12.148 7.017c-24.804 13.902-31.547 39.716-39.557 64.859-8.009-25.143-14.753-50.957-39.556-64.859l12.148-7.017a5.95 5.95 0 003.84-5.845c-1.113-23.547 5.245-33.96 13.821-40.498 3.076-2.342 6.434-3.518 9.747-3.518s6.671 1.176 9.748 3.518c8.576 6.538 14.934 16.951 13.821 40.498a5.95 5.95 0 003.84 5.845zM126 0c14.042.377 28.119 3.103 40.336 8.406 8.46 3.677 16.354 8.534 23.502 14.342 3.228 2.622 5.886 5.155 8.814 8.071 7.897.273 19.438-8.5 24.796-16.709-9.221 30.23-51.299 65.929-80.43 79.589-.012-.005-.02-.012-.029-.018-5.228-3.992-11.108-5.988-16.989-5.988s-11.76 1.996-16.988 5.988c-.009.005-.017.014-.029.018-29.132-13.66-71.209-49.359-80.43-79.589 5.357 8.209 16.898 16.982 24.795 16.709 2.929-2.915 5.587-5.449 8.814-8.071C69.31 16.94 77.204 12.083 85.664 8.406 97.882 3.103 111.959.377 126 0m-25.818 106.866c-9.176-4.576-20.854-11.312-32.544-20.541-2.465 5.119-2.735 9.586-1.466 13.193.901 2.542 2.597 4.753 4.826 6.512 2.416 1.901 5.432 3.285 8.766 4.033 6.326 1.425 13.711.593 20.418-3.197"></path>
+                                <path d="M197.167 75.016c6.436-6.495 12.107-13.684 16.667-20.099l2.316 4.359c7.456 14.917 11.33 29.774 11.33 46.494l-.016 26.532.14 13.754c.54 33.766 7.846 67.929 24.396 99.193l-34.627-27.922-24.501 39.759-25.74-24.231L126 299.604l-41.132-66.748-25.739 24.231-24.501-39.759L0 245.25c16.55-31.264 23.856-65.427 24.397-99.193l.14-13.754-.016-26.532c0-16.721 3.873-31.578 11.331-46.494l2.315-4.359c4.56 6.415 10.23 13.603 16.667 20.099l-2.01 4.175c-3.905 8.109-5.198 17.176-2.156 25.799 1.961 5.554 5.54 10.317 10.154 13.953 4.48 3.531 9.782 5.911 15.333 7.161 3.616.814 7.3 1.149 10.96 1.035-.854 4.841-1.227 9.862-1.251 14.978L53.2 160.984l25.206 14.129a41.926 41.926 0 015.734 3.869c20.781 18.658 33.275 73.855 41.861 100.816 8.587-26.961 21.08-82.158 41.862-100.816a41.865 41.865 0 015.734-3.869l25.206-14.129-32.665-18.866c-.024-5.116-.397-10.137-1.251-14.978 3.66.114 7.344-.221 10.96-1.035 5.551-1.25 10.854-3.63 15.333-7.161 4.613-3.636 8.193-8.399 10.153-13.953 3.043-8.623 1.749-17.689-2.155-25.799l-2.01-4.175z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://dedust.io/" target="_blank" class="btn icon-only">
+                            <img src="./img/dextools_logo.png" alt="Dextools Logo" class="icon-img">
+                        </a>
+                    </div>
                 </div>
-                <button class="burger-btn">
+                <button class="burger-btn" style="margin-right: 5px;">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -255,10 +355,20 @@
                             <h1 class="hero__title title" data-aos="fade-left" data-aos-duration="800" data-aos-delay="0">Gaton</h1>
                             <p class="hero-article__subtitle" data-aos="fade-left" data-aos-duration="800" data-aos-delay="50">Be a rich goat -  buy GATON </p>
                             <div class="hero-article__actions" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                                <a href="https://dedust.io/" target="_blank" class="hero-article__button button button_red">buy $gaton</a>
+                                <a href="https://dedust.io/" target="_blank" style="background-color: #742994;" class="hero-article__button button button_red">buy $gaton</a>
                                 <div class="hero-article__social">
-                                    <a href="https://t.me/gatonvip" target="_blank" class="hero-article__social-icon"><img src="./img/icons/tg-icon.svg" alt=""></a>
-                                    <a href="https://x.com/gatonvip" target="_blank" class="hero-article__social-icon"><img src="./img/icons/twitter-icon.svg" alt=""></a>
+                                    <a href="https://t.me/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to telegram">
+                                        <img src="./img/icons/tg-icon.svg" alt="">
+                                    </a>
+                                    <a href=" https://x.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to twitter">
+                                        <img src="./img/icons/twitter-icon.svg" alt="">
+                                    </a>
+                                    <a href="https://instagram.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to instagram">
+                                        <img src="./img/icons/instagram.svg" alt="">
+                                    </a>
+                                    <a href="https://youtube.com/@gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to youtube">
+                                        <img src="./img/icons/youtube.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="hero__article" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
@@ -440,8 +550,8 @@
             </section>
             
 
-            <div class="main__airdrop airdrop" id="airdrop-section">
-                <div class="airdrop__container">
+            <div class="main__airdrop airdrop" id="airdrop-section" style="background-color: #742994;">
+                <div class="airdrop__container" style="background-color: #742994;">
                     <h2 class="airdrop__title title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">HOW TO BUY</h2>
                     <div class="airdrop__steps">
                         <div class="airdrop__step" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
@@ -497,7 +607,7 @@
                         <a href="https://instagram.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to instagram">
                             <img src="./img/icons/instagram.svg" alt="">
                         </a>
-                        <a href="tiktok.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to tiktok">
+                        <a href="https://tiktok.com/gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to tiktok">
                             <img src="./img/icons/tiktok.svg" alt="">
                         </a>
                         <a href="https://youtube.com/@gatonvip" target="_blank" class="footer-nav__contact-icon" aria-label="link to youtube">
