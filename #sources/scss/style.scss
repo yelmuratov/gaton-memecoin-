@@ -450,16 +450,13 @@
             padding-left: calc(40px + (60 - 40) * ( (100vw - 767.98px) / (1200 - 767.98)));
             padding-right: calc(40px + (60 - 40) * ( (100vw - 767.98px) / (1200 - 767.98)));
 
-            border-right: calc(2px + (3 - 2) * ( (100vw - 767.98px) / (1200 - 767.98))) solid $white;
         }
         @media (max-width: 767.98px) {
             font-size: 22px;
             height: 50px;
             padding: 0 40px;
-            border-right: 2px solid $white;
         }
         line-height: 110%;
-        border-right: 3px solid  $white;
 
         text-transform: uppercase;
 
