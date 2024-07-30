@@ -760,7 +760,6 @@ button, a {
   font-family: Benzin;
   font-size: 35px;
   line-height: 110%;
-  border-right: 3px solid #fff;
   text-transform: uppercase;
   -webkit-animation: ticker 5s linear infinite;
           animation: ticker 5s linear infinite;
@@ -771,7 +770,6 @@ button, a {
     height: calc(50px + 28 * (100vw - 767.98px) / 432.02);
     padding-left: calc(40px + 20 * (100vw - 767.98px) / 432.02);
     padding-right: calc(40px + 20 * (100vw - 767.98px) / 432.02);
-    border-right: calc(2px + 1 * (100vw - 767.98px) / 432.02) solid #fff;
   }
 }
 @media (max-width: 767.98px) {
